@@ -42,7 +42,7 @@ _KILL_STRAGGLERS = (
     "Where-Object CommandLine -like '*watch.py*' | "
     "ForEach-Object { Stop-Process -Id $_.ProcessId -Force }; "
     "Get-CimInstance Win32_Process -Filter \"Name='chrome.exe'\" | "
-    "Where-Object CommandLine -like '*autoClicker*browserProfile*' | "
+    "Where-Object CommandLine -like '*boxedGemWatcher*browserProfile*' | "
     "ForEach-Object { Stop-Process -Id $_.ProcessId -Force }"
 )
 

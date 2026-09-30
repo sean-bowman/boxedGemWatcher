@@ -16,7 +16,7 @@ happens, log in with a plain, non-automated Chrome pointed at the same
 profile directory instead, then close it:
 
     "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe" ^
-        --user-data-dir="<repo>\\autoClicker\\browserProfile" https://boxed.gg/
+        --user-data-dir="<repo>\\boxedGemWatcher\\browserProfile" https://boxed.gg/
 
 Since PROFILE_DIR is just an on-disk Chrome profile, the cookies it writes
 are picked up by watch.py identically either way.

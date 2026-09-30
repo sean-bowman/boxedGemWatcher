@@ -1,4 +1,4 @@
-# autoClicker -- boxed.gg gem-drop watcher
+# boxedGemWatcher -- boxed.gg gem-drop watcher
 
 A browser-automation utility that logs into [boxed.gg](https://boxed.gg) and continuously claims
 the gem drops that go live in the chat overlay roughly every 30 minutes: so the drops get
@@ -142,7 +142,7 @@ Get-CimInstance Win32_Process -Filter "Name='pythonw.exe'" |
 
 ```powershell
 Get-CimInstance Win32_Process -Filter "Name='pythonw.exe'" | ? CommandLine -like '*watch.py*' | % { Stop-Process -Id $_.ProcessId -Force }
-Get-CimInstance Win32_Process -Filter "Name='chrome.exe'"   | ? CommandLine -like '*autoClicker*browserProfile*' | % { Stop-Process -Id $_.ProcessId -Force }
+Get-CimInstance Win32_Process -Filter "Name='chrome.exe'"   | ? CommandLine -like '*boxedGemWatcher*browserProfile*' | % { Stop-Process -Id $_.ProcessId -Force }
 ```
 
 **Other handles:**
